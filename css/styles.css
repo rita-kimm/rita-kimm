@@ -1,0 +1,364 @@
+/*-----------------------------Базовые стили-----------------------------------*/
+@font-face {
+	font-family: 'Gudea-Regular';
+	src: url('../fonts/Gudea-Regular.eot');
+	src: url('../fonts/Gudea-Regular.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/Gudea-Regular.woff') format('woff'),
+		 url('../fonts/Gudea-Regular.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: MyriadPro-Regular;
+	src: url('../fonts/MyriadPro-Regular.eot');
+	src: url('../fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/MyriadPro-Regular.woff') format('woff'),
+		 url('../fonts/MyriadPro-Regular.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
+
+
+
+body {
+	font: 14px 'Gudea-Regular', Hevletica, sans-serif;
+	background: url(../img/bg.jpg) fixed;
+	color: #979695;
+	outline: none;
+}
+
+#wrap {
+	width: 1020px;
+	margin: 65px auto;
+}
+
+header, #content, footer {
+	background: url(../img/div-bg.png);
+	border: 1px solid #fff;
+	margin-bottom: 14px;
+	padding: 0 40px;
+}
+
+a {
+	color: #979695;
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover, .active {
+	color: #a6b95b;
+}
+
+h2 {
+	font-size: 24px;
+	text-transform: uppercase;
+	font-family: MyriadPro-Regular, sans-serif;
+}
+
+.clear {
+	clear: both;
+}
+
+.dotted-line {
+	border-bottom:  1px dotted #a9a9a9;
+	margin-top: 62px;
+}
+
+p{
+	line-height: 20px;
+}
+
+/*-----------------------------  Шапка   -----------------------------------*/
+
+header {
+	height: 213px;
+}
+
+#logo {
+	margin-top: 42px;
+}
+
+#site-slogan {
+	font-size: 25px;
+	text-transform: uppercase;
+    margin-top: 3px;
+    letter-spacing: 1px;
+}
+
+#main-menu {
+	margin-top: 40px;
+}
+
+#main-menu ul {
+	float:left;
+	margin-top: 2px;
+}
+
+#main-menu ul li{
+	float:left;
+	margin-right: 31px;
+}
+
+#main-menu ul li a{
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+#search-box {
+	float: right;
+	position: relative;
+}
+
+#btn-search {
+	position: absolute;
+	right: 4px;
+	top: 4px;
+	outline: none;
+}
+
+#inp-search, .inp-wide {
+	border: 1px solid #cdc5bb;
+	background: #efe8de;
+	width: 214px;
+	height: 23px;
+	outline: none;
+    padding-left: 2px;
+    font: 16px 'Gudea-Regular';
+}
+/*-----------------------------  Контент  -----------------------------------*/
+
+#content {
+	padding-top: 38px;
+	padding-bottom: 42px;
+}
+
+#banner {
+	overflow: hidden;
+	position: relative;
+	border-bottom: 1px dotted #a9a9a9;
+	padding-bottom: 17px;
+}
+
+#banner-box {
+	position: absolute;
+    right: 27px;
+    bottom: 55px;
+	text-align: right;
+}
+
+#banner-box h2 {
+	color: #fbfbfb;
+	font-family: 'Gudea-Regular', sans-serif;
+}
+
+#banner-box p {
+	color: #eaeae9;
+	margin-top: 18px;
+}
+
+#banner-box a {
+	color: #333333;
+	font: 15px MyriadPro-Regular, sans-serif;
+	
+	display: block;
+	background: #fbf9f7;
+	border: 1px solid #cdc5bb;
+	float: right;
+	padding: 6px 13px 4px 9px;
+	margin-top: 14px;
+}
+
+#banner-box  a:hover{
+	text-decoration: underline;
+}
+
+#new-prod, #featured-prod {
+	border-bottom: 1px dotted #a9a9a9;
+	padding-bottom: 57px;
+}
+
+#new-prod h2, #featured-prod h2 {
+    margin: 24px 0px 20px;
+}
+
+.prod {
+	width: 220px;
+	float: left;
+}
+
+.prod + .prod {
+	margin-left: 19px;
+}
+
+.prod-name, .prod-cost{
+	font-family: MyriadPro-Regular, sans-serif;
+	color: #92a351;
+}
+
+.prod-name {
+	float: left;
+	margin-bottom: 10px;
+}
+
+.prod-cost {
+	float: right;
+	width: 60px;
+}
+
+.prod img {
+	margin-bottom: 13px;
+}
+
+.prod p {
+	line-height: 19px;
+	margin-bottom: 17px;
+}
+
+.prod a, .btn {
+	display: block;
+	font-family: MyriadPro-Regular, sans-serif;
+	color: #464545;
+	float: left;
+	border: 1px solid #cec7bd;
+	background: -moz-linear-gradient(top,  rgba(255,255,255,0.26) 0%, rgba(0,0,0,0.26) 100%);
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,0.26) 0%,rgba(0,0,0,0.26) 100%);
+	background: linear-gradient(to bottom,  rgba(255,255,255,0.26) 0%,rgba(0,0,0,0.26) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#42ffffff', endColorstr='#42000000',GradientType=0 );
+
+	padding: 4px 9px 0px 7px;
+    margin-right: 16px;
+}
+
+.prod a:hover, .btn:hover {
+	color: #464545;
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0.26) 0%, rgba(255,255,255,0.26) 100%);
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0.26) 0%,rgba(255,255,255,0.26) 100%);
+	background: linear-gradient(to bottom,  rgba(0,0,0,0.26) 0%,rgba(255,255,255,0.26) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#42000000', endColorstr='#42ffffff',GradientType=0 );
+
+}
+
+
+#breadcrumb {
+	margin-bottom: 46px;
+}
+
+#breadcrumb li {
+	float: left;
+	border-left: 1px solid #dcdcdc;
+	border-right:  1px solid #e8e8e8;
+	padding: 0 5px;
+}
+
+#breadcrumb li:first-child {
+	border-left: 0px solid #dcdcdc;
+	padding-left: 0;
+}
+
+#breadcrumb li:last-child {
+	border-right: 0px solid #dcdcdc;
+	padding-right: 0;
+}
+
+/*-----------------------------  login   -----------------------------------*/
+
+div#content.login {
+	padding-top: 35px;
+}
+
+.content-box {
+	float: left;
+	width: 700px;
+}
+
+.content-box p {
+	margin-bottom: 18px;
+}
+
+aside {
+	float: right;
+	width: 218px;
+}
+
+.login h2 {
+	border-bottom: 1px dotted #a9a9a9;
+	padding-bottom: 4px;
+	margin-bottom: 25px;
+}
+
+.wide-btn {
+	padding: 4px 20px 0px 20px;
+   letter-spacing: 0.5px;
+}
+
+.login aside  p {
+	margin-bottom: 19px;
+}
+
+.login aside  input {
+	margin-bottom: 10px;
+}
+
+.login aside  a.btn {
+	float: right;
+	margin-right: 0;
+	margin-bottom: 6px;
+}
+
+.forgot {
+	color: #a6b95b;
+}
+
+.forgot:hover {
+	text-decoration: underline;
+}
+/*-----------------------------  Подвал   -----------------------------------*/
+
+footer {
+	padding: 35px 40px 23px;
+	line-height: 20px;
+}
+
+footer h2{
+	font-size: 21px;
+	margin-bottom: 9px;
+}
+
+footer p{
+	margin-bottom: 20px;
+}
+
+footer  .footer-div{
+	float: left;
+	padding-top: 6px;
+	width: 218px;
+	min-height: 161px;
+}
+
+footer .footer-div + div{
+	border-left: 1px dotted #a9a9a9;
+	padding-left: 21px;
+}
+
+.footer-text1 {
+	font: 30px MyriadPro-Regular, sans-serif;
+	line-height: 24px;
+	text-transform: uppercase;
+	color: #333;
+	margin: 4px 0 10px;
+}
+
+.footer-text2 {
+	font-size: 18px;
+	color: #936d5c;
+	margin: 0 0 10px 1px;
+}
+
+footer img {
+	margin-top: 11px;
+}
+
+footer img+img {
+	margin-left: 8px;
+}
